@@ -6,3 +6,5 @@ setup new raspberry pi
 `sudo ./script.sh`
 
 follow prompt!
+
+Scripts sets up username, password and a static private IP address 
