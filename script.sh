@@ -30,7 +30,7 @@ if [ $(id -u) -eq 0 ]; then
         ip=($ip_address)
         IFS=$OIFS
         if [[ ${ip[3]} -le 255 ]]; then
-            cat <<EOF > /tmp/dhcpcd.conf
+            cat <<EOF >> /etc/dhcpcd.conf
 interface wlan0
 static ip_address=$ip_address
 static routers=192.168.0.1
